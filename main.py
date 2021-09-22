@@ -12,8 +12,8 @@ class CallBot:
         self.voice = vonage.Voice(self.client)
 
         self.response = self.voice.create_call({
-            'to': [{'type': 'phone', 'number': "33662394744"}],
-            'from': {'type': 'phone', 'number': "33662394744"},
+            'to': [{'type': 'phone', 'number': "yourphonenumber"}],
+            'from': {'type': 'phone', 'number': "yourphonenumber"},
             'ncco': [{'action': 'talk', 'text': 'Hello, my name is Maxence, and I am on call with you with a computer'}]
         })
 
