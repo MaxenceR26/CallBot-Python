@@ -5,7 +5,7 @@ class CallBot:
     def __init__(self):
         with open("private.key", 'r') as file:
             self.client = vonage.Client(
-                application_id="6eb6aba2-fcb7-42a4-b1e6-901a0bb023f2",
+                application_id="YOUR APPLICATION ID",
                 private_key=file.read(),
             )
 
